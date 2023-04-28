@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>phd-program-icon.png</file>
+    </qresource>
+    <qresource prefix="/phd-program" >
+    </qresource>
+    <qresource prefix="/defaults" >
+    </qresource>
+</RCC>

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/">
+    <file>scorm-content-package-icon.png</file>
+  </qresource>
+</RCC>

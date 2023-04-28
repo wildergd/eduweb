@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>unknown_project.png</file>
+        <file>my-projects.png</file>
+        <file>new-project.png</file>
+        <file>deploy-projects.png</file>
+        <file>program-options.png</file>
+        <file>about.png</file>
+        <file>delete-projects.png</file>
+        <file>sync-projects.png</file>
+        <file>export-projects.png</file>
+        <file>link-projects.png</file>
+        <file>plugin-settings.png</file>
+        <file>dialog-button-ok.png</file>
+        <file>dialog-button-cancel.png</file>
+    </qresource>
+    <qresource prefix="/splash">
+        <file>splash.png</file>
+    </qresource>
+    <qresource prefix="/treeview">
+        <file alias="expand.png">toggle-expand.png</file>
+        <file alias="collapse.png">toggle.png</file>
+    </qresource>
+</RCC>

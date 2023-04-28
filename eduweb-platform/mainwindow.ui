@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainForm, QDialog {
+        background-color: palette(window);
+}
+
+QListView#optionsList {
+        show-decoration-selected: 1;
+        background-color: palette(window);
+        border:none;
+        padding-top:3px;
+}
+
+QListView#optionsList::item {
+        padding:3px;
+        margin-top:5px;
+        width: 136px;
+        border-left: 1px solid palette(light);
+        border-top: 1px solid palette(light);
+        border-right: 1px solid palette(mid);
+        border-bottom: 1px solid palette(mid);
+}
+
+QListView#optionsList::item:selected:active, 
+QListView#optionsList::item:selected:!active {
+        background-color: palette(highlight); 
+        border: 1px inset palette(highlight);
+        color: palette(highlighted-text);
+}
+
+QListView#optionsList::item:hover {
+        background-color: palette(mid); 
+        border: 1px groove palette(dark);
+        color: palette(highlighted-text);
+}
+
+QTreeView#projects {
+        show-decoration-selected: 1;
+}
+
+QTreeView#projects::item {
+        padding:3px 0px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="margin">
+     <number>5</number>
+    </property>
+    <item>
+     <widget class="QListWidget" name="optionsList">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DragDrop</enum>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::IconMode</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string>My Projects</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignBottom</set>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/my-projects.png</normaloff>:/icons/my-projects.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsEnabled</set>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Project</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignBottom</set>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/new-project.png</normaloff>:/icons/new-project.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsEnabled</set>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Deploy Project(s)</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignBottom</set>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/deploy-projects.png</normaloff>:/icons/deploy-projects.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsEnabled</set>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Settings</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignBottom</set>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/program-options.png</normaloff>:/icons/program-options.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsEnabled</set>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>About eduWeb...</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignBottom</set>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/about.png</normaloff>:/icons/about.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsEnabled</set>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="pages">
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

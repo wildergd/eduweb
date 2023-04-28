@@ -1,0 +1,2140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CourseProjectEditDialog</class>
+ <widget class="QDialog" name="CourseProjectEditDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="margin">
+    <number>4</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="wgTitle" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="statusTip">
+      <string notr="true"/>
+     </property>
+     <property name="whatsThis">
+      <string notr="true"/>
+     </property>
+     <property name="accessibleName">
+      <string notr="true"/>
+     </property>
+     <property name="accessibleDescription">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>4</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="toolTip">
+         <string notr="true"/>
+        </property>
+        <property name="statusTip">
+         <string notr="true"/>
+        </property>
+        <property name="whatsThis">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleName">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleDescription">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Course title</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::NoTextInteraction</set>
+        </property>
+        <property name="buddy">
+         <cstring>edCourseTitle</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edCourseTitle">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="statusTip">
+         <string notr="true"/>
+        </property>
+        <property name="whatsThis">
+         <string>Here you have to enter the title of the course</string>
+        </property>
+        <property name="accessibleName">
+         <string notr="true"/>
+        </property>
+        <property name="accessibleDescription">
+         <string notr="true"/>
+        </property>
+        <property name="inputMask">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbLanguage">
+        <property name="text">
+         <string>Language</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbLanguage">
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>English</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Spanish</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tbarCourseEditor">
+     <property name="toolTip">
+      <string notr="true"/>
+     </property>
+     <property name="statusTip">
+      <string notr="true"/>
+     </property>
+     <property name="whatsThis">
+      <string notr="true"/>
+     </property>
+     <property name="accessibleName">
+      <string notr="true"/>
+     </property>
+     <property name="accessibleDescription">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>22</width>
+       <height>22</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="tbCourseProgramme">
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/course-project/course-programme.png</normaloff>:/course-project/course-programme.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Programme</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>240</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="whatsThis">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleName">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleDescription">
+          <string notr="true"/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_6" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="accessibleName">
+             <string/>
+            </property>
+            <property name="accessibleDescription">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QToolButton" name="btnAddProgrammeProperty">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Add a new field to the course programme</string>
+               </property>
+               <property name="statusTip">
+                <string/>
+               </property>
+               <property name="whatsThis">
+                <string/>
+               </property>
+               <property name="accessibleName">
+                <string/>
+               </property>
+               <property name="accessibleDescription">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/plus.png</normaloff>:/course-project/plus.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="shortcut">
+                <string notr="true"/>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonIconOnly</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QToolButton" name="btnExportProgramme">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Exports course programme to a file</string>
+               </property>
+               <property name="statusTip">
+                <string/>
+               </property>
+               <property name="whatsThis">
+                <string/>
+               </property>
+               <property name="accessibleName">
+                <string/>
+               </property>
+               <property name="accessibleDescription">
+                <string/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/document-export.png</normaloff>:/course-project/document-export.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="shortcut">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="2">
+              <widget class="QToolButton" name="btnDeleteProgrammeProperty">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Remove current field from the course programme</string>
+               </property>
+               <property name="statusTip">
+                <string/>
+               </property>
+               <property name="whatsThis">
+                <string/>
+               </property>
+               <property name="accessibleName">
+                <string/>
+               </property>
+               <property name="accessibleDescription">
+                <string/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/minus.png</normaloff>:/course-project/minus.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="shortcut">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="ManualSortableListWidget" name="lvProgrammeProperties">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="statusTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListView::item {padding:4px}
+</string>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::DoubleClicked</set>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="textElideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="RichEditorWidget" name="txtProgrammeFieldValue" native="true">
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="whatsThis">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleName">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleDescription">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tbCourseTopics">
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/course-project/topics.png</normaloff>:/course-project/topics.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Topics</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>180</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="whatsThis">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleName">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleDescription">
+          <string notr="true"/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_3" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="statusTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QToolButton" name="btnAddTopic">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Add new topic to the course</string>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string notr="true"/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/plus.png</normaloff>:/course-project/plus.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="shortcut">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QToolButton" name="btnDeleteTopic">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Remove current topic</string>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string notr="true"/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/minus.png</normaloff>:/course-project/minus.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="shortcut">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QToolButton" name="btnExportTopics">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Export all topics designs to a file</string>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string notr="true"/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/document-export.png</normaloff>:/course-project/document-export.png</iconset>
+               </property>
+               <property name="shortcut">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <spacer name="horizontalSpacer_2">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                </font>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="ManualSortableListWidget" name="lvTopicsList">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="statusTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::DoubleClicked</set>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="textElideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frTopicDesign">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QTabWidget" name="tbarTopicEditor">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="documentMode">
+             <bool>false</bool>
+            </property>
+            <widget class="QWidget" name="tbTopicDesign">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/course-project/insert-text.png</normaloff>:/course-project/insert-text.png</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Didactical Design</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <property name="margin">
+               <number>4</number>
+              </property>
+              <item>
+               <widget class="RichEditorWidget" name="txtTopicDesignFieldValue" native="true">
+                <property name="toolTip">
+                 <string notr="true"/>
+                </property>
+                <property name="statusTip">
+                 <string notr="true"/>
+                </property>
+                <property name="whatsThis">
+                 <string notr="true"/>
+                </property>
+                <property name="accessibleName">
+                 <string notr="true"/>
+                </property>
+                <property name="accessibleDescription">
+                 <string notr="true"/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_8" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>180</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>180</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <property name="spacing">
+                  <number>2</number>
+                 </property>
+                 <property name="margin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QWidget" name="widget_9" native="true">
+                   <property name="toolTip">
+                    <string notr="true"/>
+                   </property>
+                   <property name="statusTip">
+                    <string notr="true"/>
+                   </property>
+                   <property name="whatsThis">
+                    <string notr="true"/>
+                   </property>
+                   <property name="accessibleName">
+                    <string notr="true"/>
+                   </property>
+                   <property name="accessibleDescription">
+                    <string notr="true"/>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <property name="margin">
+                     <number>0</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QToolButton" name="btnAddTopicDesignField">
+                      <property name="minimumSize">
+                       <size>
+                        <width>30</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="toolTip">
+                       <string>Add a new field to the topic design</string>
+                      </property>
+                      <property name="statusTip">
+                       <string notr="true"/>
+                      </property>
+                      <property name="whatsThis">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleName">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleDescription">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string notr="true"/>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/course-project/plus.png</normaloff>:/course-project/plus.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>16</width>
+                        <height>16</height>
+                       </size>
+                      </property>
+                      <property name="shortcut">
+                       <string notr="true"/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QToolButton" name="btnDeleteTopicDesignField">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>30</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="toolTip">
+                       <string>Remove current field from current topic design</string>
+                      </property>
+                      <property name="statusTip">
+                       <string notr="true"/>
+                      </property>
+                      <property name="whatsThis">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleName">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleDescription">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string notr="true"/>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/course-project/minus.png</normaloff>:/course-project/minus.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>16</width>
+                        <height>16</height>
+                       </size>
+                      </property>
+                      <property name="shortcut">
+                       <string notr="true"/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QToolButton" name="btnExportTopicDesign">
+                      <property name="minimumSize">
+                       <size>
+                        <width>30</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="toolTip">
+                       <string>Export current topic design to a file</string>
+                      </property>
+                      <property name="statusTip">
+                       <string notr="true"/>
+                      </property>
+                      <property name="whatsThis">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleName">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleDescription">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string notr="true"/>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/course-project/document-export.png</normaloff>:/course-project/document-export.png</iconset>
+                      </property>
+                      <property name="shortcut">
+                       <string notr="true"/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="3">
+                     <spacer name="horizontalSpacer_3">
+                      <property name="font">
+                       <font>
+                        <family>Arial</family>
+                       </font>
+                      </property>
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="ManualSortableListWidget" name="lvTopicProperties">
+                   <property name="contextMenuPolicy">
+                    <enum>Qt::NoContextMenu</enum>
+                   </property>
+                   <property name="toolTip">
+                    <string notr="true"/>
+                   </property>
+                   <property name="statusTip">
+                    <string notr="true"/>
+                   </property>
+                   <property name="whatsThis">
+                    <string notr="true"/>
+                   </property>
+                   <property name="accessibleName">
+                    <string notr="true"/>
+                   </property>
+                   <property name="accessibleDescription">
+                    <string notr="true"/>
+                   </property>
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::DoubleClicked</set>
+                   </property>
+                   <property name="selectionBehavior">
+                    <enum>QAbstractItemView::SelectRows</enum>
+                   </property>
+                   <property name="textElideMode">
+                    <enum>Qt::ElideNone</enum>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tbTopicResources">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/course-project/insert-link.png</normaloff>:/course-project/insert-link.png</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Link resources</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <property name="margin">
+               <number>4</number>
+              </property>
+              <item>
+               <widget class="QListWidget" name="lvTopicResources">
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tbCourseLectures">
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/course-project/lectures.png</normaloff>:/course-project/lectures.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Lessons</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>180</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="whatsThis">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleName">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleDescription">
+          <string notr="true"/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_7" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="statusTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QToolButton" name="btnAddLecture">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string notr="true">Add a new lesson</string>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string notr="true"/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/plus.png</normaloff>:/course-project/plus.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="shortcut">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QToolButton" name="btnDeleteLecture">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string notr="true">Remove current lesson</string>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string notr="true"/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/minus.png</normaloff>:/course-project/minus.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="shortcut">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QToolButton" name="btnExportLectures">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string notr="true">Export all lessons designs to a file</string>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string notr="true"/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/course-project/document-export.png</normaloff>:/course-project/document-export.png</iconset>
+               </property>
+               <property name="shortcut">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <spacer name="horizontalSpacer_5">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                </font>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="ManualSortableListWidget" name="lvTopicLectures">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="statusTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::DoubleClicked</set>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="textElideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frTLectureDesign">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QWidget" name="widget_16" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <property name="spacing">
+              <number>4</number>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="toolTip">
+                <string notr="true"/>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Link to topic</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="cbLectureTopic">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tbarLessonEditor">
+            <property name="toolTip">
+             <string>Set lesson's resources</string>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tbLessonDesign">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/course-project/insert-text.png</normaloff>:/course-project/insert-text.png</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Didactical Design</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="margin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_10">
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <property name="spacing">
+                  <number>6</number>
+                 </property>
+                 <property name="margin">
+                  <number>4</number>
+                 </property>
+                 <item>
+                  <widget class="RichEditorWidget" name="txtLectureDesignFieldValue" native="true">
+                   <property name="toolTip">
+                    <string notr="true"/>
+                   </property>
+                   <property name="statusTip">
+                    <string notr="true"/>
+                   </property>
+                   <property name="whatsThis">
+                    <string notr="true"/>
+                   </property>
+                   <property name="accessibleName">
+                    <string notr="true"/>
+                   </property>
+                   <property name="accessibleDescription">
+                    <string notr="true"/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_11" native="true">
+                   <property name="minimumSize">
+                    <size>
+                     <width>180</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>180</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_7">
+                    <property name="spacing">
+                     <number>2</number>
+                    </property>
+                    <property name="margin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QWidget" name="widget_15" native="true">
+                      <property name="toolTip">
+                       <string notr="true"/>
+                      </property>
+                      <property name="statusTip">
+                       <string notr="true"/>
+                      </property>
+                      <property name="whatsThis">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleName">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleDescription">
+                       <string notr="true"/>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_5">
+                       <property name="margin">
+                        <number>0</number>
+                       </property>
+                       <item row="0" column="0">
+                        <widget class="QToolButton" name="btnAddLectureDesignField">
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string notr="true">Add new field to lesson's design</string>
+                         </property>
+                         <property name="statusTip">
+                          <string notr="true"/>
+                         </property>
+                         <property name="whatsThis">
+                          <string notr="true"/>
+                         </property>
+                         <property name="accessibleName">
+                          <string notr="true"/>
+                         </property>
+                         <property name="accessibleDescription">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string notr="true"/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="resources.qrc">
+                           <normaloff>:/course-project/plus.png</normaloff>:/course-project/plus.png</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>16</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="shortcut">
+                          <string notr="true"/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QToolButton" name="btnDeleteLectureDesignField">
+                         <property name="enabled">
+                          <bool>false</bool>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string notr="true">Remove current field from lesson's design design</string>
+                         </property>
+                         <property name="statusTip">
+                          <string notr="true"/>
+                         </property>
+                         <property name="whatsThis">
+                          <string notr="true"/>
+                         </property>
+                         <property name="accessibleName">
+                          <string notr="true"/>
+                         </property>
+                         <property name="accessibleDescription">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string notr="true"/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="resources.qrc">
+                           <normaloff>:/course-project/minus.png</normaloff>:/course-project/minus.png</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>16</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="shortcut">
+                          <string notr="true"/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="2">
+                        <widget class="QToolButton" name="btnExportLectureDesign">
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string notr="true">Export current lesson design to a file</string>
+                         </property>
+                         <property name="statusTip">
+                          <string notr="true"/>
+                         </property>
+                         <property name="whatsThis">
+                          <string notr="true"/>
+                         </property>
+                         <property name="accessibleName">
+                          <string notr="true"/>
+                         </property>
+                         <property name="accessibleDescription">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string notr="true"/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="resources.qrc">
+                           <normaloff>:/course-project/document-export.png</normaloff>:/course-project/document-export.png</iconset>
+                         </property>
+                         <property name="shortcut">
+                          <string notr="true"/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="3">
+                        <spacer name="horizontalSpacer_4">
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                          </font>
+                         </property>
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="ManualSortableListWidget" name="lvLectureProperties">
+                      <property name="contextMenuPolicy">
+                       <enum>Qt::NoContextMenu</enum>
+                      </property>
+                      <property name="toolTip">
+                       <string notr="true"/>
+                      </property>
+                      <property name="statusTip">
+                       <string notr="true"/>
+                      </property>
+                      <property name="whatsThis">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleName">
+                       <string notr="true"/>
+                      </property>
+                      <property name="accessibleDescription">
+                       <string notr="true"/>
+                      </property>
+                      <property name="editTriggers">
+                       <set>QAbstractItemView::DoubleClicked</set>
+                      </property>
+                      <property name="selectionBehavior">
+                       <enum>QAbstractItemView::SelectRows</enum>
+                      </property>
+                      <property name="textElideMode">
+                       <enum>Qt::ElideNone</enum>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tbLessonResources">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/course-project/insert-link.png</normaloff>:/course-project/insert-link.png</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Link resources</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <property name="margin">
+               <number>4</number>
+              </property>
+              <item>
+               <widget class="QListWidget" name="lvLectureResources">
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tbCourseResources">
+      <attribute name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/course-project/resources.png</normaloff>:/course-project/resources.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Resources</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QWidget" name="widget_12" native="true">
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="whatsThis">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleName">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleDescription">
+          <string notr="true"/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_13" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>400</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="accessibleName">
+             <string/>
+            </property>
+            <property name="accessibleDescription">
+             <string/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="widget_14" native="true">
+               <property name="toolTip">
+                <string notr="true"/>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_6">
+                <property name="margin">
+                 <number>0</number>
+                </property>
+                <item row="0" column="1">
+                 <widget class="QToolButton" name="btnDeleteResource">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string>Remove selected resource(s)</string>
+                  </property>
+                  <property name="statusTip">
+                   <string/>
+                  </property>
+                  <property name="whatsThis">
+                   <string/>
+                  </property>
+                  <property name="accessibleName">
+                   <string/>
+                  </property>
+                  <property name="accessibleDescription">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/course-project/minus.png</normaloff>:/course-project/minus.png</iconset>
+                  </property>
+                  <property name="shortcut">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QToolButton" name="btnAddResource">
+                  <property name="minimumSize">
+                   <size>
+                    <width>50</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string>Add new resource</string>
+                  </property>
+                  <property name="statusTip">
+                   <string/>
+                  </property>
+                  <property name="whatsThis">
+                   <string/>
+                  </property>
+                  <property name="accessibleName">
+                   <string/>
+                  </property>
+                  <property name="accessibleDescription">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/course-project/plus.png</normaloff>:/course-project/plus.png</iconset>
+                  </property>
+                  <property name="popupMode">
+                   <enum>QToolButton::MenuButtonPopup</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <spacer name="horizontalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="lvResourceList">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="acceptDrops">
+                <bool>true</bool>
+               </property>
+               <property name="toolTip">
+                <string notr="true"/>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::DoubleClicked</set>
+               </property>
+               <property name="dragDropMode">
+                <enum>QAbstractItemView::NoDragDrop</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="isWrapping" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="viewMode">
+                <enum>QListView::ListMode</enum>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="selectionRectVisible">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="wgResourceProperties" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="statusTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="title">
+                <string>Category</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                 <widget class="QComboBox" name="cbResourceCategory"/>
+                </item>
+                <item>
+                 <widget class="QToolButton" name="btnManageCategories">
+                  <property name="toolTip">
+                   <string>Manage categories</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/course-project/tag_green.png</normaloff>:/course-project/tag_green.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string notr="true"/>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="title">
+                <string notr="true">Author(s)</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="QPlainTextEdit" name="txtResourceAuthor"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="toolTip">
+                <string notr="true"/>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="title">
+                <string notr="true">Description</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="RichEditorWidget" name="txtResourceDescription" native="true">
+                  <property name="toolTip">
+                   <string notr="true"/>
+                  </property>
+                  <property name="statusTip">
+                   <string notr="true"/>
+                  </property>
+                  <property name="whatsThis">
+                   <string notr="true"/>
+                  </property>
+                  <property name="accessibleName">
+                   <string notr="true"/>
+                  </property>
+                  <property name="accessibleDescription">
+                   <string notr="true"/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ManualSortableListWidget</class>
+   <extends>QListWidget</extends>
+   <header>manualsortablelistwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>RichEditorWidget</class>
+   <extends>QWidget</extends>
+   <header>richeditorwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnAddLecture</sender>
+   <signal>triggered(QAction*)</signal>
+   <receiver>CourseProjectEditDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

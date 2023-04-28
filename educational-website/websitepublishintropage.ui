@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WebsitePublishIntroPage</class>
+ <widget class="QWizardPage" name="WebsitePublishIntroPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WizardPage</string>
+  </property>
+  <property name="title">
+   <string>Welcome to the Educational Website Publication Wizard</string>
+  </property>
+  <property name="subTitle">
+   <string notr="true">&lt;p&gt;&amp;nbsp;&lt;/p&gt;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>The assistant will allow you to publish selected projects as an Educational WEB, for its distribution in a CD/DVD, USB memory or upload them to a WWW server. Follow the steps and complete all data.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

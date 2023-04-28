@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WebsitePublishFTPDeployOptionsPage</class>
+ <widget class="QWizardPage" name="WebsitePublishFTPDeployOptionsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WizardPage</string>
+  </property>
+  <property name="title">
+   <string>FTP Publishing Options</string>
+  </property>
+  <property name="subTitle">
+   <string>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

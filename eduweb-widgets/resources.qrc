@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>text_align_center.png</file>
+        <file>text_align_justify.png</file>
+        <file>text_align_left.png</file>
+        <file>text_align_right.png</file>
+        <file>text_bold.png</file>
+        <file>text_italic.png</file>
+        <file>text_list_bullets.png</file>
+        <file>text_list_numbers.png</file>
+        <file>text_underline.png</file>
+        <file>folder-open.png</file>
+        <file>document-open.png</file>
+        <file>media-floppy.png</file>
+    </qresource>
+</RCC>

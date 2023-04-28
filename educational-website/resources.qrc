@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>educational-website-icon.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>hard-drive.png</file>
+        <file>cd-dvd.png</file>
+        <file>web-site.png</file>
+        <file>current.png</file>
+        <file>success.png</file>
+        <file>error.png</file>
+    </qresource>
+</RCC>

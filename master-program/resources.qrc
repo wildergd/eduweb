@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>master-program-icon.png</file>
+    </qresource>
+    <qresource prefix="/master-program" >
+    </qresource>
+    <qresource prefix="/defaults" >
+    </qresource>
+</RCC>

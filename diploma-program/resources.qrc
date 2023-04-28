@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>diploma-program-icon.png</file>
+    </qresource>
+    <qresource prefix="/diploma-program" >
+    </qresource>
+    <qresource prefix="/defaults" >
+    </qresource>
+</RCC>

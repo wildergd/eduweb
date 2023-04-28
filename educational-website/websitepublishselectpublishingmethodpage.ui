@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WebsitePublishSelectPublishingMethodPage</class>
+ <widget class="QWizardPage" name="WebsitePublishSelectPublishingMethodPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>601</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WizardPage</string>
+  </property>
+  <property name="title">
+   <string>Publishing Options</string>
+  </property>
+  <property name="subTitle">
+   <string>Select the method to publish your website</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QRadioButton" name="publishFTP">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Deploy to a Web Server through FTP protocol</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/web-site.png</normaloff>:/icons/web-site.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lbPublishFtpDescription">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">margin:0px 40px; 
+margin-bottom:40px;</string>
+     </property>
+     <property name="text">
+      <string>Select this option if you want to deploy your project(s) to a Web Server</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QRadioButton" name="publishDVD">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Create a CD/DVD compilation</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/cd-dvd.png</normaloff>:/icons/cd-dvd.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lbPublishCDDVDDescription">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">margin:0px 40px; 
+margin-bottom:40px;</string>
+     </property>
+     <property name="text">
+      <string>Select this option if you want to burn a CD/DVD with your project(s)</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QRadioButton" name="publishFolder">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Deploy to a folder on your hard disk or in a USB memory</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/hard-drive.png</normaloff>:/icons/hard-drive.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lbPublishFilesystemDescription">
+     <property name="styleSheet">
+      <string notr="true">margin:0px 40px; 
+margin-bottom:40px;</string>
+     </property>
+     <property name="text">
+      <string>Select this option if you want to deploy your project(s) to a folder on your hard disk or in a USB memory</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/">
+    <file>moodle-publish-icon.png</file>
+  </qresource>
+</RCC>

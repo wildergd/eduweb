@@ -1,0 +1,39 @@
+<RCC>
+  <qresource prefix="/">
+    <file>course-project-icon.png</file>
+  </qresource>
+  <qresource prefix="/course-project">
+    <file>topics.png</file>
+    <file>course-programme.png</file>
+    <file>document-export.png</file>
+    <file>insert-link.png</file>
+    <file>insert-text.png</file>
+    <file>resources.png</file>
+    <file>tag_green.png</file>
+    <file>minus.png</file>
+    <file>plus.png</file>
+    <file>lectures.png</file>
+  </qresource>
+  <qresource prefix="/mimetypes">
+    <file>avi.png</file>
+    <file>doc.png</file>
+    <file>mdb.png</file>
+    <file>mp3.png</file>
+    <file>odg.png</file>
+    <file>ods.png</file>
+    <file>odt.png</file>
+    <file>pdf.png</file>
+    <file>ppt.png</file>
+    <file>swf.png</file>
+    <file>txt.png</file>
+    <file>unknown.png</file>
+    <file>xls.png</file>
+    <file>zip.png</file>
+  </qresource>
+  <qresource prefix="/defaults">
+    <file>default-programme-metadata.txt</file>
+    <file>default-lecture-metadata.txt</file>
+    <file>default-resources-categories.txt</file>
+    <file>default-topic-metadata.txt</file>
+  </qresource>
+</RCC>
